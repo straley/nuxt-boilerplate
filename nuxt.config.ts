@@ -60,11 +60,11 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config) {
-      config.module.rules.push({
-        test: require.resolve('some-external-lib'),
-        use: 'imports-loader?this=>window,fix=>module.exports=0'
-      })
-    }
+    // extend(config) {
+    //   config.module.rules.push({
+    //     test: require.resolve('some-external-lib'),
+    //     use: 'imports-loader?this=>window,fix=>module.exports=0'
+    //   })
+    // }
   }
 }

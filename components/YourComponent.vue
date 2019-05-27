@@ -1,27 +1,34 @@
 <template>
   <div>
-    <!-- component goes here -->
+    <h1>Hello World</h1>
+    <!-- external component goes here -->
   </div>
 </template>
 
 <script lang="ts">
 import { Component } from 'vue'
 
-type YourComponent = Component & {
-  $externalJsLib: any // | or some type def
-}
+// setup a type definition for your component
+// type YourComponent = Component & {
+//   $externalJsLib: any // | or some type def
+// }
 
-const YourComponent:YourComponent = {
+// use your type definition instead of Component
+// const YourComponent:YourComponent = {
+
+const YourComponent:Component = {
   name: 'YourComponent',
-  $externalJsLib: null,
 
-  mounted() {
-    if (!this.$externalJsLib) return
-    const externalJsLib = this.$externalJsLib // localize this if needed
-    console.log(externalJsLib) // do something with this var
-  },
+  // if you're using an external lib, use a $-variable to track it
+  // $externalJsLib: null,
+
+  // mounted() {
+  //   if you're using an external lib, get it's refrence here
+  //   if (!this.$externalJsLib) return
+  //   const externalJsLib = this.$externalJsLib // localize this if needed
+  // },
   methods: {
-    // draw amazing stuff here with this.s
+    // draw amazing stuff here with this.
   }
 }
 export default YourComponent

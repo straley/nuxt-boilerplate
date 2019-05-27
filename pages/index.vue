@@ -1,11 +1,12 @@
 <template>
   <YourComponent />
 </template>
-<script>
-import YourComponent from '~/components/YourComponent'
+<script lang="ts">
+
+import YourComponent from '@/components/YourComponent.vue'
 
 export default {
-  name: 'YourComponent',
+  name: 'Home',
   components: {
     YourComponent
   },

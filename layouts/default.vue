@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <nav
+    <nav
       class="navbar header has-shadow is-primary"
       role="navigation"
       aria-label="main navigation"
@@ -10,11 +10,7 @@
           class="navbar-item"
           href="/"
         >
-          <img
-            src="~assets/buefy.png"
-            alt="Buefy"
-            height="28"
-          >
+          Your Site
         </a>
 
         <div class="navbar-burger">
@@ -23,7 +19,7 @@
           <span />
         </div>
       </div>
-    </nav> -->
+    </nav>
 
     <section class="main-content columns">
 
@@ -58,7 +54,7 @@ export default {
     return {
       items: [
         {
-          title: 'Playground',
+          title: 'Home',
           icon: 'home',
           to: { name: 'index' }
         },
