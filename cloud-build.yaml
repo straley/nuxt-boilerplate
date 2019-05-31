@@ -1,0 +1,13 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      [
+        'build',
+        '-f',
+        'Dockerfile',
+        '-t',
+        'gcr.io/maidbot-ws-dev/nuxt-test',
+        '.',
+      ]
+images:
+  - gcr.io/maidbot-ws-dev/nuxt-test
